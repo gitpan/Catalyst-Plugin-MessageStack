@@ -9,38 +9,41 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'A Catalyst plugin for gracefully handling messaging (and more) that follows the Post/Redirect/Get pattern.',
-  'AUTHOR' => 'J. Shirley <jshirley@cpan.org>',
-  'BUILD_REQUIRES' => {
-    'Catalyst' => '0',
-    'Catalyst::Controller' => '0',
-    'Catalyst::Model' => '0',
-    'Catalyst::Plugin::Session::State' => '0',
-    'Catalyst::Test' => '0',
-    'Data::Dump' => '0',
-    'FindBin' => '0',
-    'Message::Stack::Message' => '0',
-    'Test::More' => '0',
-    'Test::WWW::Mechanize::Catalyst' => '0'
+  "ABSTRACT" => "A Catalyst plugin for gracefully handling messaging (and more) that follows the Post/Redirect/Get pattern.",
+  "AUTHOR" => "J. Shirley <jshirley\@cpan.org>",
+  "BUILD_REQUIRES" => {
+    "Catalyst" => 0,
+    "Catalyst::Controller" => 0,
+    "Catalyst::Model" => 0,
+    "Catalyst::Plugin::Session::State" => 0,
+    "Catalyst::Test" => 0,
+    "Data::Dump" => 0,
+    "FindBin" => 0,
+    "Message::Stack::Message" => 0,
+    "Test::More" => 0,
+    "Test::WWW::Mechanize::Catalyst" => 0,
+    "base" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.30'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Catalyst-Plugin-MessageStack',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Catalyst::Plugin::MessageStack',
-  'PREREQ_PM' => {
-    'Catalyst::Plugin::Session' => '0',
-    'Catalyst::Plugin::Session::State::Cookie' => '0',
-    'Catalyst::Runtime' => '0',
-    'MRO::Compat' => '0',
-    'Message::Stack' => '0.21',
-    'Scalar::Util' => '0'
+  "DISTNAME" => "Catalyst-Plugin-MessageStack",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Catalyst::Plugin::MessageStack",
+  "PREREQ_PM" => {
+    "Catalyst::Plugin::Session" => 0,
+    "Catalyst::Plugin::Session::State::Cookie" => 0,
+    "Catalyst::Runtime" => 0,
+    "MRO::Compat" => 0,
+    "Message::Stack" => "0.21",
+    "Scalar::Util" => 0,
+    "strict" => 0,
+    "warnings" => 0
   },
-  'VERSION' => '0.01',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.02",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

@@ -4,7 +4,7 @@
       "J. Shirley <jshirley@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200007, CPAN::Meta::Converter version 2.110440",
+   "generated_by" : "Dist::Zilla version 4.300000, CPAN::Meta::Converter version 2.110440",
    "license" : [
       "perl_5"
    ],
@@ -26,7 +26,9 @@
             "Catalyst::Runtime" : 0,
             "MRO::Compat" : 0,
             "Message::Stack" : "0.21",
-            "Scalar::Util" : 0
+            "Scalar::Util" : 0,
+            "strict" : 0,
+            "warnings" : 0
          }
       },
       "test" : {
@@ -40,7 +42,8 @@
             "FindBin" : 0,
             "Message::Stack::Message" : 0,
             "Test::More" : 0,
-            "Test::WWW::Mechanize::Catalyst" : 0
+            "Test::WWW::Mechanize::Catalyst" : 0,
+            "base" : 0
          }
       }
    },
@@ -51,6 +54,6 @@
          "url" : "https://github.com/jshirley/catalyst-plugin-messagestack"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
 

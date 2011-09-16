@@ -13,10 +13,11 @@ build_requires:
   Message::Stack::Message: 0
   Test::More: 0
   Test::WWW::Mechanize::Catalyst: 0
+  base: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.200007, CPAN::Meta::Converter version 2.110440'
+generated_by: 'Dist::Zilla version 4.300000, CPAN::Meta::Converter version 2.110440'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -29,6 +30,8 @@ requires:
   MRO::Compat: 0
   Message::Stack: 0.21
   Scalar::Util: 0
+  strict: 0
+  warnings: 0
 resources:
   repository: https://github.com/jshirley/catalyst-plugin-messagestack
-version: 0.01
+version: 0.02

@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Catalyst-Plugin-MessageStack,
-version 0.01:
+version 0.02:
 
   A Catalyst plugin for gracefully handling messaging (and more) that follows the Post/Redirect/Get pattern.
 
