@@ -17,7 +17,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300000, CPAN::Meta::Converter version 2.110440'
+generated_by: 'Dist::Zilla version 4.300013, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -34,4 +34,4 @@ requires:
   warnings: 0
 resources:
   repository: https://github.com/jshirley/catalyst-plugin-messagestack
-version: 0.02
+version: 0.03

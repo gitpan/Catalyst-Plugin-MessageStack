@@ -4,7 +4,7 @@ Catalyst::Plugin::MessageStack - A Catalyst plugin for gracefully handling messa
 
 # VERSION
 
-version 0.02
+version 0.03
 
 # DESCRIPTION
 
@@ -135,7 +135,7 @@ J. Shirley <jshirley@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Cold Hard Code, LLC.
+This software is copyright (c) 2012 by Cold Hard Code, LLC.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

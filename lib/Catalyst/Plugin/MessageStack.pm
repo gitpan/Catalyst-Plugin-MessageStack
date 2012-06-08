@@ -1,6 +1,6 @@
 package Catalyst::Plugin::MessageStack;
 {
-  $Catalyst::Plugin::MessageStack::VERSION = '0.02';
+  $Catalyst::Plugin::MessageStack::VERSION = '0.03';
 }
 
 # ABSTRACT: A Catalyst plugin for gracefully handling messaging (and more) that follows the Post/Redirect/Get pattern.
@@ -45,6 +45,7 @@ sub message {
             $s->{id}      = $message->{message};
             $s->{scope}   = $message->{scope} || 'global';
             $s->{subject} = $message->{subject} if($message->{subject});
+            $s->{params}  = $message->{params} if($message->{params});
         } else {
             $s->{level}   = $default;
             $s->{id}      = $message;
@@ -126,8 +127,10 @@ sub dispatch {
 
     if ( $messages->has_messages and $c->response->location) {
         $c->flash->{$flash_key}    = $messages;
+        $c->keep_flash($flash_key);
         if ( $config->{model} ) {
             $c->flash->{$rflash_key} ||= $c->model($config->{model})->results;
+            $c->keep_flash($rflash_key);
         }
     }
     return $ret;
@@ -144,7 +147,7 @@ Catalyst::Plugin::MessageStack - A Catalyst plugin for gracefully handling messa
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 DESCRIPTION
 
@@ -275,7 +278,7 @@ J. Shirley <jshirley@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Cold Hard Code, LLC.
+This software is copyright (c) 2012 by Cold Hard Code, LLC.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
